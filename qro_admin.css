@@ -1,0 +1,359 @@
+[for="qro-pixel-placing-page"]
+    body, td, textarea, input, select {
+    /* font-family: "Roboto"; */
+    font-size: 16px;
+    } 
+    a {
+        color:#4E598C;
+    }
+
+     ol {
+    list-style-type: none;
+    }
+    /* ol span {
+        background-color: #6f25fb;
+    /* background-color: #F1C232;
+    padding: 0px 10px 3px;
+    border-radius: 100%;
+    color: white;
+    font-size: 20px;
+    margin:5px;
+    } */
+    .switch > input[type='checkbox']{
+        display: none;
+    }
+
+    ol li {
+    margin-bottom: 20px;
+    height: 2rem;
+    }
+    #insert_header{
+        margin-top:5px;
+    }
+    #welcome_text{
+    margin-left: 25px;
+    }
+    .qroBtn,
+    form#payment-form input.qroBtn{
+    background-color: #4E598C;
+    border-radius: 5px;
+    color: white;
+    padding:0px 10px;
+    font-size: 14px;
+    }
+
+    .qro_col_1{
+        float: left;
+        width: 66%;
+    }
+    .qro_col_2{
+        float: left;
+        width: 34%;
+    }
+    #extraDataBox{
+    width:300px;
+    /* position: absolute; */
+    /* right: 10px; */
+    /* margin-left: 30%; */
+    padding: 20px;
+    background: white;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+#testimonial{
+    width:400px;
+    margin-top:20px;
+    /* position: absolute; */
+    /* right: 10px; */
+    padding: 8px;
+    background: white;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+
+
+.biggerH{
+    font-size: 23px;
+font-weight: normal;
+}
+
+
+#extraDataBox .package_top{
+    border:none;
+}
+#extraDataBox .package_title {
+    padding-bottom: 0;
+}
+#extraDataBox li{
+    line-height: 2;
+}
+#extraDataBox hr{
+    border-top: #dfe3e8 1px solid;
+}
+
+
+
+/*SETTINGS SECTIONS*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    margin: 3px;
+
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.cb_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.cb_slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .cb_slider {
+    background-color: #6F25FB;
+}
+
+input:focus + .cb_slider {
+    box-shadow: 0 0 1px #6F25FB;
+}
+
+input:checked + .cb_slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.cb_slider.round {
+    border-radius: 34px;
+}
+
+.cb_slider.round:before {
+    border-radius: 50%;
+}
+.purple_label{
+    color: #6F25FB;
+    position: relative;
+    bottom: 1ex;
+}
+.checkbox_label{
+    margin-left: 45px;
+    margin-top: 4px;
+    color: #6F25FB;
+    white-space: nowrap;
+    position: relative;
+    bottom: 0.5ex;
+}
+
+input:not(:checked) + .checkbox_label{
+    color: #ccc;
+}
+
+.tooltip{
+    display: none;
+}
+
+.switch:hover .tooltip.pro_only {
+    display:block;
+    width: 300px;
+    position: absolute;
+    font-size: small;
+    left: 10rem;
+    top: 0;
+    color: #6F25FB;
+    text-decoration: dotted underline;
+}
+
+.value_slide_container:hover .tooltip.pro_only,
+.learn_more:hover + .tooltip{
+    display:inline-flex;
+    padding-left: 2rem;
+    /* width: 300px; */
+    font-size: small;
+    color: #6F25FB;
+    text-decoration: dotted underline;
+    font-weight: normal;
+}
+
+.learn_more{
+    border-radius: 50%;
+    border: 1px solid #6F25FB;
+    color :#6F25FB;
+    padding: 0 0.3rem;
+    font-size: smaller;
+}
+/* .learn_more:hover + .tooltip{
+    display:inline-flex;
+    padding-left: 2rem;
+    width: 650px;
+    font-size: small;
+    font-weight: normal;
+    color: #6F25FB;
+    text-decoration: dotted underline;
+} */
+
+
+.value_slider {
+    -webkit-appearance: none;
+    /*width: 100%;*/
+    width:300px;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.value_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #6F25FB;
+    /* background: #ccc; */
+    cursor: pointer;
+}
+.inactive.value_slider::-webkit-slider-thumb {
+    background: #ccc;
+    /*cursor: pointer;*/
+}
+
+.value_slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #6F25FB;
+    border: none;
+    cursor: pointer;
+}
+.value_slider.inactive::-moz-range-thumb {
+    background: #ccc;
+}
+.settings_group{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+/*label.inactive , .value_slider.inactive{*/
+/*    color:#ccc;*/
+/*}*/
+/* 
+.switch:hover .tooltip.pro_only{
+    display: none;
+}
+.switch:hover .tooltip.pro_only.inactive{
+    display:inline-flex;
+}
+.value_slide_container:hover .tooltip.pro_only{
+    display: none;
+}
+.value_slide_container:hover .tooltip.pro_only.inactive{
+    display:inline-flex;
+} */
+
+div .inactive{
+    color: #ccc
+}
+#ces_range{
+    background:#ccc
+}
+
+#pro_sub {
+    width: 60%;
+    background: white;
+    padding: 0.5rem;
+    border: #ccc 0.5px solid;
+}
+#pro_sub.pro_disable{
+    border: black 0.5px solid;
+    background:#ccc;   
+}
+
+
+
+
+/* @media screen and  (max-width: 768) { */
+    @media screen and (max-width: 782px){
+
+    /* .slideshow-container { 
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    } */
+    .qro_col_1{
+        float: left;
+        width: 100%;
+    }
+    #extraDataBox{
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+}
+
+
+/**
+ * STRIPE
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+ .StripeElement,
+form#payment-form input {
+    box-sizing: border-box;
+  
+    height: 40px;
+  
+    padding: 10px 12px;
+  
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: white;
+  
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+  }
+  .stripeLike{
+    width: 100%;
+    }
+  .stripeLike::placeholder{
+    color: #aab7c4;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+  }
+  
+  .StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+  }
+  
+  .StripeElement--invalid {
+    border-color: #fa755a;
+  }
+  
+  .StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+  }
